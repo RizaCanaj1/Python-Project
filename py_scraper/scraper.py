@@ -23,8 +23,6 @@ def get_links(file):
     games_urls = []
     for article in articles:
         games_urls.append(article['href'])
-        print(games_urls)
-    print(games_urls)
     return games_urls
 def get_html(url):
     response = requests.get(url)
